@@ -48,4 +48,5 @@ export const addToDo = (todo) => (dispatch) =>{
       .then(data => dispatch({type: UPDATE_TODO, payload: data.data.todo_item}))
       .catch(err => dispatch({type: FETCH_TODO_FAIL, payload: err.message})
       )
-    }
+    } 
+    // update todo
